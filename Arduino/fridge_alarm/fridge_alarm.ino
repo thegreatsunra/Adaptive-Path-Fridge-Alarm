@@ -15,8 +15,14 @@
 
 // download and place these in a folder called 'libraries' in your arduino sketchbook folder
 // more information about installing libraries at http://www.arduino.cc/en/Reference/Libraries
-// Bounce - http://www.arduino.cc/playground/Code/Bounce
-// Tone - http://code.google.com/p/rogue-code/downloads/detail?name=Arduino-Library-Tone.zip
+// Bounce - http://arduino.cc/playground/uploads/Code/Bounce.zip
+// Tone - http://rogue-code.googlecode.com/files/Arduino-Library-Tone.zip
+
+// NOTE: The Tone library included in this zip file is patched to work with Arduino 1.0.
+// If you use the library downloaded from Google Code, you will need to update it to work.
+// Follow the instructions at http://arduino.cc/forum/index.php/topic,87398.0.html
+// Or simply open Tone.cpp and replace wiring.h on line 26 with Arduino.h
+
 #include <Bounce.h>
 #include <Tone.h>
 
